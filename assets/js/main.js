@@ -59,6 +59,7 @@ const COMMANDS = {
   rd: "Whoa!!! You found the secret command!!! To get access to the beta for my apps, go <a href = 'https://blackholegames.gq/beta' target = '_blank' style = 'color:#000;'> here </a> <br>The beta code is A3T4M",
   n: "OK",
   no: "OK",
+  isa: 'im sorry, would u forgive this stupid?',
   about:
     "Hey There! My name is Juan David Rondon i am a web developer on my way to becoming a senior developer. in the meantime, i like to play the guitar and play beach volleyball in my spare time, Feel free to visit my <a href ='https://github.com/jdrb2098' target='_blank' style='color:#000;'> Github",
   ls:
