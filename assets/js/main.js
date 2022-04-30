@@ -103,7 +103,7 @@ const execute = function executeCommand(input) {
   } else if (input === "history") {
     showHist();
   } else if (input === "github") {
-    open("https://github.com/terminal-js");
+    open("https://github.com/jdrb2098");
   } else {
     output = `<div class="terminal-line"><span class="success">➜</span> <span class="directory">~</span> ${input}</div>`;
     if (!COMMANDS.hasOwnProperty(input)) {
