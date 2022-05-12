@@ -168,11 +168,14 @@ body.dark-theme{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    transition: 0.5s; 
 }
 .profile__perfile img{
     width: 100px;
+    transition: 0.5s; 
 }
 .profile__border{
+    position: relative;
     border: 3.5px solid var(--first-color);
     margin: auto;
     width: 115px;
@@ -180,7 +183,62 @@ body.dark-theme{
     border-radius: 50%;
     display: grid;
     place-items: center;
-    margin-bottom: .75rem;   
+    margin-bottom: .75rem;
+    transition: 0.5s;   
+}
+.profile__intro{
+  display: none;
+  margin: auto;
+}
+.profile__intro h4{
+  
+  position: relative;
+  width: max-content;
+}
+
+.profile__perfile:hover .profile__intro{
+  display: block;
+}
+.typed-out{
+  overflow: hidden;
+  
+  border-right: .32em solid;
+  white-space: nowrap;
+  animation: 
+    typing 2.5s steps(22, end) forwards,
+    blinking .75s infinite;
+  
+  width: 0;
+}@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blinking {
+  from { border-color: transparent }
+  to { border-color: #B8B3BD; }
+}
+.profile__icons{
+  display: grid;
+  align-items: center;
+  justify-items: start;
+}
+.profile__icons i{
+  margin-top: 1rem;
+}
+.profile__border:hover{
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 1rem;
+}
+.profile__perfile:hover{
+  width: 270px;
+  height: 270px;
+  border-radius: 1rem;
+}
+
+.profile__perfile:hover img{
+  display: none;
 }
 .profile__name{
     font-size: var(--h2-font-size);
