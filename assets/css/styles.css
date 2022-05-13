@@ -194,6 +194,13 @@ body.dark-theme{
   
   position: relative;
   width: max-content;
+  color: var(--text-color);
+}
+.ri-mail-line{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .profile__perfile:hover .profile__intro{
@@ -215,7 +222,7 @@ body.dark-theme{
 }
 @keyframes blinking {
   from { border-color: transparent }
-  to { border-color: #B8B3BD; }
+  to { border-color: var(--text-color);; }
 }
 .profile__icons{
   display: grid;
