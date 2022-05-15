@@ -624,6 +624,46 @@ body.dark-theme{
 .fillter-tab-active{
     background-color: var(--body-color);
 }
+/*=============== CONTACT ===============*/
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__titles{
+  width: 300px;
+  text-align: center
+}
+.contact__form form{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem ;
+}
+.contact__form input{
+  width: 300px;
+  height: 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #BABFC4;
+  padding: 0.5rem;
+}
+.contact__form input:focus label {
+  border-color: yellow; /* WHEN "input:blur" <label> border-color should be yellow */
+}
+.contact__form textarea{
+  width: 300px;
+  height: 150px;
+  border-radius: 0.3rem;
+  border: 1px solid #BABFC4;
+  padding: 0.5rem;
+  accent-color: #0085f2;
+}
+.contact button{
+  border: 0px;
+  align-self: center;
+  border-radius: 2rem;
+  height: 40px;
+  cursor: pointer;
+}
 /*=============== FOOTER ===============*/
 .footer__copy{
     display: block;
@@ -763,4 +803,15 @@ body.dark-theme{
       .footer__copy {
         margin: 4.5rem 0 2.5rem;
       }
+      .contact{
+        flex-direction: row;
+        margin: 6rem auto;
+        justify-content: center;
+        gap: 5rem;
+      }
+      .contact__titles{
+        align-self: flex-start;
+        text-align: inherit;
+      }
+      
 }
